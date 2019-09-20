@@ -1,0 +1,235 @@
+<html>
+	<head>
+		<style>
+		@keyframes bgcolor {
+			0% {
+				background-color: #45a3e5
+			}
+			30% {
+				background-color: #66bf39
+			}
+			60% {
+				background-color: #eb670f
+			}
+			90% {
+				background-color: #f35
+			}
+			100% {
+				background-color: #864cbf
+			}
+		}
+		#mainbg{
+			padding: 1%;
+			-webkit-animation: bgcolor 20s infinite;
+			animation: bgcolor 10s infinite;
+			-webkit-animation-direction: alternate;
+			animation-direction: alternate;
+			min-height: 100%;
+			width:100%;
+		}
+		.box{
+			padding: 3%;
+			margin: 0 auto;
+			width: 50%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 25px
+			}
+		.boxtextcenter{
+			 margin: 0 auto;
+			 text-align: center
+						 }
+						 
+		
+		input[type=text] {
+			background-color: #03A9F4;
+			color: white;
+			border-radius: 25px;
+		}
+		input[type=password] {
+			background-color: #03A9F4;
+			color: white;
+			border-radius: 25px;
+		}
+			input[type=submit] {
+			background-color: #03A9F4;
+			color: white;
+			border-radius: 25px;
+		} 
+		.header{
+			width: 100%;
+			height: 5%;
+			top: 0;
+			background-color: #607D8B;
+			
+			box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			overflow:hidden;
+		}
+		.center{
+			text-align:center;
+			margin: 0 auto;
+			width: 100%;
+		}
+		a { color: white;;
+			margin-left:4%;
+			margin-right:4%;
+		}
+		
+		</style>
+	
+	</head>
+	<body >
+		
+	    <div id=mainbg>
+		<div class = header>
+			<font color="#ffffff" size="4.0">
+				<div class=center >
+					<a href="secondhomepage.php" float="left" style="color: #ffffff">Home</a>
+					<a href="mychatpage.php" float="left" style="color: #ffffff">Chat</a>
+					<a href="myquizlink.php" float="left" style="color: #ffffff">Quiz</a>
+					<a href="mylogout.php" float="left" style="color: #ffffff">Logout</a>
+				</div>
+			</font>
+		</div>
+			
+			<form method="POST" action="quizform.php">
+				<div class=box>
+					<div class= boxtextcenter>
+						<font color="#ffffff">
+							<h1>Create Quiz</h1>
+							<br>
+								Quiz Name: <br>
+								<input type="text" name="txtQuizName">
+								<br>
+								<br>
+								Quiz Date: <br>
+								<input type="text" name="txtQuizDate">
+								<br>
+								<br>
+							
+								
+					
+						</font>
+					</div>
+				</div>
+				
+				<div class=box>
+					<div class= boxtextcenter>
+						<font color="#ffffff">
+					
+							
+								Question 1: <br>
+								<input type="text" name="txtQ1">
+								<br>
+								<br>
+								Choice 1: <br>
+								<input type="text" name="txtQ1C1">
+								<br>
+								<br>
+								Choice 2: <br>
+								<input type="text" name="txtQ1C2">
+								<br>
+								<br>
+								Choice 3: <br>
+								<input type="text" name="txtQ1C3">
+								<br>
+								<br>
+								Choice 4: <br>			
+								<input type="text" name="txtQ1C4">
+								<br>
+								<br>
+								Correct Answer: <br>			
+								<input type="text" name="txtA1">
+								<br>
+								<br>
+								
+							
+						</font>
+					</div>
+				</div>
+				
+				<div class=box>
+					<div class= boxtextcenter>
+						<font color="#ffffff">
+								Question 2: <br>
+								<input type="text" name="txtQ2">
+								<br>
+								<br>
+								Choice 1: <br>
+								<input type="text" name="txtQ2C1">
+								<br>
+								<br>
+								Choice 2: <br>
+								<input type="text" name="txtQ2C2">
+								<br>
+								<br>
+								Choice 3: <br>
+								<input type="text" name="txtQ2C3">
+								<br>
+								<br>
+								Choice 4: <br>			
+								<input type="text" name="txtQ2C4">
+								<br>
+								<br>
+								Correct Answer: <br>			
+								<input type="text" name="txtA2">
+								<br>
+								<br>
+								
+							
+						</font>
+					</div>
+				</div>
+				
+				<div class=box>
+					<div class= boxtextcenter>
+						<font color="#ffffff">
+								Question 3: <br>
+								<input type="text" name="txtQ3">
+								<br>
+								<br>
+								Choice 1: <br>
+								<input type="text" name="txtQ3C1">
+								<br>
+								<br>
+								Choice 2: <br>
+								<input type="text" name="txtQ3C2">
+								<br>
+								<br>
+								Choice 3: <br>
+								<input type="text" name="txtQ3C3">
+								<br>
+								<br>
+								Choice 4: <br>			
+								<input type="text" name="txtQ3C4">
+								<br>
+								<br>
+								Correct Answer: <br>			
+								<input type="text" name="txtA3">
+								<br>
+								<br>
+								
+						
+						</font>
+					</div>
+				</div>
+				<br>
+				<div class = boxtextcenter>
+				<input type="submit" value="Create Quiz">
+				</div>
+				</form>
+				
+			</div>
+			
+				
+			  <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	
+	</body>
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+</html>
